@@ -4,41 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rps game</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js:"
+      type="application/javascript"
+    ></script>
+    <script src="script.js"></script>
+    
 </head>
 <body>
-    <header>
-        <h1>Rock Paper Scissors</h1>
-    </header>
-
-    <div class="score-board">
-        <div id="user-label" class="badge">user</div>
-        <div id="computer-label" class="badge">computer</div>
-        <span id="user-score">0</span>:<span id="computer-score">0</span>    
-    </div>
-
-    <div class="result">
-        <p>Paper covers rock. You win!</p>
-    </div>
-
-    <div class="choices">
-        <div class="choice" id="r">
-            <img src="images/images/rock.png" alt="">
-        </div>
-
-        <div class="choice" id="p">
-            <img src="images/images/paper.png" alt="">
-        </div>
-
-        <div class="choice" id="s">
-            <img src="images/images/scissors.png" alt="">
-        </div>
-
-    </div>
-    
-    <p id="action-msg">Make your move.</p>
-    <script src="app.js" charset="utf-8"></script>
-
+    <div>
+        <h1>Web3 приложение для заметок</h1>
+        <p>you can write notes and read notes from smart-contract</p>
+            <br />
+        <label for="note"> Write note:</label>
+        <input type="text" id="note" />
+        <button onclick="setNote()">Set Note</button>
+        <button onclick="getNote()">Get Note</button>
+        <p>my note: <span id="result"> </span></p>
+      </div>   
 </body>
 </html>
